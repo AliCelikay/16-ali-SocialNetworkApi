@@ -16,12 +16,10 @@ const thoughtSchema = new Schema(
             // getter method to format the timestamp on query
             get: (date) => { return `${format_date(date)} ${format_time(date)}` }
         },
-        username: [
-            {
+        username: {
                 type: String,
                 required: true,
-            },
-        ],
+        },
         //  Array of nested documents created with the `reactionSchema`
         reactions: [Reaction],
     },
