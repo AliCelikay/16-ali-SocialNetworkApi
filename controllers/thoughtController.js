@@ -2,19 +2,19 @@ const { User, Thought } = require('../models');
 
 module.exports = {
     // /api/thoughts
-    getUsers(req, res) {
+    getThoughts(req, res) {
         User.find()//finds all
-            .then((users) => res.json(users))
+            .then((thought) => res.json(thought))
             .catch((err) => res.status(500).json(err));
     },
-    // /api/users/:userId
+    // /api/thoughts/:thoughtId
     getSingleThought(req, res) {
-        User.findOne({ _id: req.params.userId })//matching _id(in MongoDb) w/ userId
+        User.findOne({ _id: req.params.thoughtId })//matching _id(in MongoDb) w/ thoughtId
             .select('-__v')//dont give version
             .then((thought) =>
                 !thought
                     ? res.status(404).json({ message: 'No thought with that ID' })
-                    : res.status(200).json(user)
+                    : res.status(200).json(thoughtId)
             )
             .catch((err) => res.status(500).json(err));
     },

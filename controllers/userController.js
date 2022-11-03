@@ -76,7 +76,7 @@ module.exports = {
             )
             .catch((err) => res.status(500).json(err));
     },
-    removeFriend(req, res) {
+    deleteFriend(req, res) {
         // to remove friends, we're finding the main user(Id) and the we're finding the friend(Id), then we're adding the friend(Id) to the friends array in model
         User.findOneAndUpdate(
             { _id: req.params.userId },
