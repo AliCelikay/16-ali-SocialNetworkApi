@@ -5,15 +5,19 @@ This backend application allows users to socialize by adding thoughts, reacting 
 
 ## Table of Contents
 * [License](#license)
+* [Screenshot](#screenshot)
 * [Walkthrough](#walkthrough)
 * [Contacts](#contacts)
 
 ## License:
 ![License](https://img.shields.io/badge/License-ISC-blue)
 
+## Screenshot
+![Screenshot](./img/Screenshot%20(72).png)
+
 ## Walkthrough
 
-[Walkthrough](https://drive.google.com/file/d/1MOANt-BXQEC85_xOOT0cOqp8HeJ17Qd6/view)
+[Walkthrough Video Link](https://drive.google.com/file/d/1MOANt-BXQEC85_xOOT0cOqp8HeJ17Qd6/view)
 
 
 ## Contacts
